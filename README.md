@@ -18,7 +18,7 @@ Universitário Salesiano.
 
 
 
-2. METODOLOGIA
+# 1. METODOLOGIA
 Para realizar este trabalho foi abordado uma metodologia colaborativa, sendo
 feito reuniões para avaliações e ajustes dos detalhes da pipeline com o responsável
 da Prefeitura de Vila Velha buscando entender e resolver todos os desafios
@@ -43,7 +43,9 @@ software de Business Intelligence, ou seja, transforma dados em informação
 gerando inteligência de negócios. Ele permite que o usuário conecte diferentes
 fontes de dados (txt, Excel, CSV, banco de dados, dados de internet, etc) para
 extraí-los, tratá-los, gerar indicadores de desempenho e criar dashboards.
-3. RESULTADOS E DISCUSSÃO
+
+
+# 2. RESULTADOS E DISCUSSÃO
 Seguindo a metodologia indicada quanto a construção de todo o projeto foram
 utilizados os dados obtidos através das entrevistas com os responsáveis escolhidos
 pela prefeitura, foram elaborados uma série de protótipos do sistema para uma
@@ -54,29 +56,52 @@ uma versão funcional do ETL dessa base fornecida, restando apenas os dados
 essenciais que foram imprescindíveis para o desenvolvimento das visualizações
 propostas pelos solicitantes, em um primeiro momento. Essa versão do sistema vai
 ser demonstrada nas Figuras a seguir.
-3.1. MODELAGEM DIMENSIONAL
+## 2.1. MODELAGEM DIMENSIONAL
 A modelagem dimensional deu-se na criação de três tabelas dimensões e
 uma tabela fato, as tabelas dimensões são ligadas a tabela fato por um
 relacionamento com cardinalidade 1 para muitos, conforme imagem abaixo.
-3.2. DASHBOARD
+
+![image](https://user-images.githubusercontent.com/62062407/205998709-b708e77f-4d86-48aa-be6e-9b2c84444bca.png)
+
+## 2.2. DASHBOARD
 O município de vila velha é dividido por regiões, cada região contém diversos
 bairros, em vista disso, foi criado um filtro por regiões. Também podemos ver a
 quantidade de cadastros que foram aprovados e não aprovados, bem como
 informações de cadastros por faixa de renda e faixa etária por gênero.
+
+![image](https://user-images.githubusercontent.com/62062407/205998812-deac864a-050f-43f2-9aa1-4e88b5382205.png)
+
+
+
 Posicionando o mouse sobre a região 5, por exemplo, temos a exibição de
 informações sobre a região selecionada sendo exibidas em um formato de tabela.
 Essas informações exibidas podem ser parametrizadas acessando a área
 “campos” no power bi, desta forma, é possível escolher os dados que serão exibidos
-na grid de resultado “tabela”. No exemplo mostrado na figura foi selecionado o
+na grid de resultado “tabela”.
+
+![image](https://user-images.githubusercontent.com/62062407/205998887-17e0a36c-e009-489c-af4d-ab02dc3d7179.png)
+
+No exemplo mostrado na figura foi selecionado o
 bairro, nome da pessoa, quantidade de membros na casa, renda familiar, renda per
 capita e status podendo ser aprovado ou não aprovado no cadastro único.
+
+![image](https://user-images.githubusercontent.com/62062407/205999014-b1fdce32-ba70-4a03-a707-57dfe85d62e2.png)
+
+
+
 Todo o dashboard segue esse padrão de funcionamento, ao posicionar o
 mouse sobre o campo cadastros por faixa de renda outro gráfico é exibido
 mostrando um resumo por cada região.
 O dashboard funciona de forma completamente interativa de forma que a
 ação de clicar em um área, região 5 por exemplo, mude o resultado de praticamente
 todos os campos no dashboard.
-4. CONCLUSÕES (OU CONSIDERAÇÕES FINAIS)
+
+![image](https://user-images.githubusercontent.com/62062407/205999054-87cc511a-1518-463b-9c48-14f6b0a55907.png)
+
+
+
+
+## 3. CONCLUSÕES (OU CONSIDERAÇÕES FINAIS)
 O desenvolvimento desse projeto possibilitou uma análise geral de como um
 projeto de BI pode ser feito e de como ele pode melhorar a visão do usuário final
 com suas tomadas de decisões.
